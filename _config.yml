@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: zhengyu
+title: 郑禹
 brief-intro: Linux Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://newblueskylinux.github.io" # the base hostname & protocol for your site
