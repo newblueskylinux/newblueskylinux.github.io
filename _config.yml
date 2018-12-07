@@ -7,7 +7,7 @@
 
 # Site settings
 title: 郑禹
-brief-intro: Linux Engineer
+brief-intro: Linux 运维
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://newblueskylinux.github.io" # the base hostname & protocol for your site
 
