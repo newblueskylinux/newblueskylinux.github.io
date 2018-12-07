@@ -7,7 +7,7 @@
 
 # Site settings
 title: zhengyu
-brief-intro: Front-end Dev Engineer
+brief-intro: Linux Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://newblueskylinux.github.io" # the base hostname & protocol for your site
 
@@ -57,5 +57,5 @@ excerpt_separator: "\n\n\n\n"
 
 # paginate
 gems: [jekyll-paginate]
-paginate: 6
+paginate: 3
 
