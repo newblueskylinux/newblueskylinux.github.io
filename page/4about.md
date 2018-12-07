@@ -11,10 +11,10 @@ type: page
 
 ## 关于我
 
-<iframe src="http://n1.itc.cn/img8/wb/recom/2016/03/01/145679941534629285.JPEG" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
+#<iframe src="http://n1.itc.cn/img8/wb/recom/2016/03/01/145679941534629285.JPEG" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
 ![](http://n1.itc.cn/img8/wb/recom/2016/03/01/145679941534629285.JPEG)
-性别男
-毕业于长江大学
+* 性别男
+* 毕业于长江大学
 
 
 ## 联系我
