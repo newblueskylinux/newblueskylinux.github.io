@@ -11,7 +11,7 @@ type: page
 
 ## 关于我
 
-![](http://upload.ouliu.net/i/201812091022044246b.jpeg)
+![](http://t1.aixinxi.net/o_1cu8ek2oss4j1aa62kp14jo2rla.jpg-j.jpg/)
 * 性别男
 * 毕业于长江大学
 * 工作经历：
@@ -22,8 +22,8 @@ type: page
 
 ## 联系我
 
-* GitHub：郑禹](https://github.com/newblueskylinux)
-* email：544725571@qq.com
+* [GitHub](https://github.com/newblueskylinux)
+* [email]（544725571@qq.com）
 * [微博](http://weibo.com/zhyrh1314)
 * [知乎](https://www.zhihu.com/people/zhengyu1992)
 
@@ -38,7 +38,7 @@ type: page
 
 ## 友情链接
 
-[羡辙杂俎](http://zhangwenli.com/blog) \| [Anotherhome](https://www.anotherhome.net) \| [Reverland](http://reverland.org/) \| [ZhiLi](http://lizhipower.github.io/) \| [Simmer](http://simmer-jun.github.io/) \| [awthink](http://awthink.net/) \| [Aralic](http://aralic.github.io/) \| [zchen9](http://www.chen9.info/) \| [wuhuaji](http://wuhuaji.me/) \| [lisheng](http://www.lishengcn.cn/) \| [薛彬XueBin](http://axuebin.com/blog/) \| [TBOOX](http://www.tboox.org/cn/) \|  [Ling](http://linglinyp.com/)
+ [袁勇](http://blog.pythoner.world/) [羡辙杂俎](http://zhangwenli.com/blog) \| [Anotherhome](https://www.anotherhome.net) \| [Reverland](http://reverland.org/) \| [ZhiLi](http://lizhipower.github.io/) \| [Simmer](http://simmer-jun.github.io/) \| [awthink](http://awthink.net/) \| [Aralic](http://aralic.github.io/) \| [zchen9](http://www.chen9.info/) \| [wuhuaji](http://wuhuaji.me/) \| [lisheng](http://www.lishengcn.cn/) \| [薛彬XueBin](http://axuebin.com/blog/) \| [TBOOX](http://www.tboox.org/cn/) \|  [Ling](http://linglinyp.com/)
 
 ## Comments
 
