@@ -14,6 +14,10 @@ type: page
 ![](http://upload.ouliu.net/i/201812091022044246b.jpeg)
 * 性别男
 * 毕业于长江大学
+* 工作经历：
+</br >上海美都管理咨询有限公司
+</br >日播时尚教育有限公司
+</br >上海旺旺食品集团有限公司
 
 
 ## 联系我
@@ -22,10 +26,6 @@ type: page
 * email：544725571@qq.com
 * [微博](http://weibo.com/zhyrh1314)
 * [知乎](https://www.zhihu.com/people/zhengyu1992)
-* [Facebook](https://www.facebook.com/gaohaoyang.water)
-* [Twitter](https://twitter.com/gaohaoyang126)
-* [豆瓣](https://www.douban.com/people/42525035/)
-* [豆瓣音乐人-浩阳的小站](https://site.douban.com/haoyangaiyinyue/)
 
 ## 关于本站
 
