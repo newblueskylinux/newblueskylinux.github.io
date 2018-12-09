@@ -22,25 +22,22 @@ type: page
 
 
 ## 联系我
-
+* 手机：18321373745
+* QQ：544725571
+* Email：544725571@qq.com
 * [GitHub](https://github.com/newblueskylinux)
-* [email](544725571@qq.com)
 * [微博](http://weibo.com/zhyrh1314)
 * [知乎](https://www.zhihu.com/people/zhengyu1992)
-
-## 关于本站
-
-**若您想使用这个 jekyll 博客主题，请访问：[https://github.com/Gaohaoyang/gaohaoyang.github.io](https://github.com/Gaohaoyang/gaohaoyang.github.io)**
-
-~欢迎使用~
-
-欢迎大家提一些对本站主题的建议，可以直接在下面留言或者新建一个 [Issue](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues)。
 
 
 ## 友情链接
 
- [袁勇](http://blog.pythoner.world/) \|[Gaohaoyang]https://gaohaoyang.github.io) \|[羡辙杂俎](http://zhangwenli.com/blog) \| [Anotherhome](https://www.anotherhome.net) \| [Reverland](http://reverland.org/) \| [ZhiLi](http://lizhipower.github.io/) \| [Simmer](http://simmer-jun.github.io/) \| [awthink](http://awthink.net/) \| [Aralic](http://aralic.github.io/) \| [zchen9](http://www.chen9.info/) \| [wuhuaji](http://wuhuaji.me/) \| [lisheng](http://www.lishengcn.cn/) \| [薛彬XueBin](http://axuebin.com/blog/) \| [TBOOX](http://www.tboox.org/cn/) \|  [Ling](http://linglinyp.com/)
+ [袁勇](http://blog.pythoner.world/) \|[Gaohaoyang](https://gaohaoyang.github.io) \|[羡辙杂俎](http://zhangwenli.com/blog) \| [Anotherhome](https://www.anotherhome.net) \| [Reverland](http://reverland.org/) \| [ZhiLi](http://lizhipower.github.io/) \| [Simmer](http://simmer-jun.github.io/) \| [awthink](http://awthink.net/) \| [Aralic](http://aralic.github.io/) \| [zchen9](http://www.chen9.info/) \| [wuhuaji](http://wuhuaji.me/) \| [lisheng](http://www.lishengcn.cn/) \| [薛彬XueBin](http://axuebin.com/blog/) \| [TBOOX](http://www.tboox.org/cn/) \|  [Ling](http://linglinyp.com/)
 
-## Comments
+## 特别致谢
+
+感谢[Gaohaoyang](https://gaohaoyang.github.io)大佬的github以及教程帮我完成了这个网站的搭建，以及袁勇pythoner的支持，向技术上的前辈们学习
+
+ ## Comments
 
 {% include comments.html %}
