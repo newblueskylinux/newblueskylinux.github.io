@@ -11,17 +11,17 @@ type: page
 
 ## 关于我
 
-![](http://n1.itc.cn/img8/wb/recom/2016/03/01/145679941534629285.JPEG)
+![](C:\Users\00357381\Desktop\2cun.jpg)
 * 性别男
 * 毕业于长江大学
 
 
 ## 联系我
 
-* GitHub：[Gaohaoyang](https://github.com/Gaohaoyang)
-* email：gaohaoyang126@126.com
-* [Weibo](http://weibo.com/3115521wh)
-* [知乎](https://www.zhihu.com/people/gaohaoyang)
+* GitHub：郑禹](https://github.com/newblueskylinux)
+* email：544725571@qq.com
+* [微博](http://weibo.com/zhyrh1314)
+* [知乎](https://www.zhihu.com/people/zhengyu1992)
 * [Facebook](https://www.facebook.com/gaohaoyang.water)
 * [Twitter](https://twitter.com/gaohaoyang126)
 * [豆瓣](https://www.douban.com/people/42525035/)
