@@ -11,7 +11,7 @@ type: page
 
 ## 关于我
 
-![](C:\Users\00357381\Desktop\2cun.jpg)
+![](http://upload.ouliu.net/i/201812091022044246b.jpeg)
 * 性别男
 * 毕业于长江大学
 
