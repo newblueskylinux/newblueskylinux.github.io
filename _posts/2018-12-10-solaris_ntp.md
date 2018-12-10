@@ -10,13 +10,13 @@ author: 郑禹
 {:toc}
 
 ## 检查系统软件包
-···sh
+```sh
 root@EPPRD1 # pkginfo | grep ntp
 system      SUNWntp4r                        NTPv4 (root)
 system      SUNWntp4u                        NTPv4 (usr)
 system      SUNWntpr                         NTP, (Root)
 system      SUNWntpu                         NTP, (Usr)
-···
+```
 
 
 
@@ -24,9 +24,9 @@ system      SUNWntpu                         NTP, (Usr)
 
 ## solaris 10 NTP客户端配置
 1、创建/etc/inet/ntp.conf 
-···sh
+```sh
 #cp -rp /etc/inet/ntp.client /etc/inet/ntp.conf
-···
+```
 
 2、修改/etc/inet/ntp.conf为如下格式
 ```sh
