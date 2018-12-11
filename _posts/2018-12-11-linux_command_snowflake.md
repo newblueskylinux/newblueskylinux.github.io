@@ -66,7 +66,7 @@ Su Mo Tu We Th Fr Sa
 ```
 我们现在想实现的是让雪花随机出现在这个38*132的屏幕内，并"落"到屏幕最下面一行，那么我们实现的逻辑是在屏幕内设定一个坐标系
 
-![img](G:/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0/zhengyulove1234@163.com/0e9c7158c86047908f5d40d1c4549c5d/clipboard.png) 
+![img](http://t1.aixinxi.net/o_1cuf1u56skt11em11f51uoerfsa.png-j.jpg) 
 
 
 确定确定"雪花"出现的坐标，并让其横坐标不变的情况下，纵坐标每过一段时间+1，然后"消除"掉原本位置的"雪花"
@@ -75,7 +75,7 @@ Su Mo Tu We Th Fr Sa
 ```sh
 [root@linuxstudy ~]#while true;do echo $LINES $COLUMNS $(($RANDOM%$COLUMNS)) $(printf "\u2744\n");sleep 2;done|awk '{a[$3]=0;for(x in a) {y=a[x];a[x]=a[x]+1;printf "%s;%s ",y,x;printf "%s;%s;%s 0;0\n",a[x],x,$4;}}'
 ```
-![img](G:/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0/zhengyulove1234@163.com/9c40fd833fa84dad91edd3d8addce8d2/444.gif) 
+![img](http://t1.aixinxi.net/o_1cuf2034a84h1r526pq4rr1d6ka.gif-j.jpg) 
 
 可以看到连续两次的输出坐标就是刷新"雪花"和消除“雪花”的坐标
 
@@ -86,7 +86,7 @@ Su Mo Tu We Th Fr Sa
 ```
 为了让"雪花"落得快一些，我们将sleep时间缩短到0.1秒
 
-![1544545541194](C:\Users\zy544\AppData\Local\Temp\1544545541194.png)
+![1544545541194](http://t1.aixinxi.net/o_1cuf218r9b0c62nmk49a7234a.gif-j.jpg)
 
 下面给出此程序完整的代码
 
