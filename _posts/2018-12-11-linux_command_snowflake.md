@@ -11,6 +11,12 @@ author: 郑禹
 ---
 ## 我们先来看看效果
 
+![img](http://t1.aixinxi.net/o_1cuf25ep01blp1gtatis1ac515opa.gif-j.jpg) 
+
+
+
+
+
 首先输出这个效果我们要知道cal这个命令，cal是单词calendar的缩写，在linux中视输出日历的命令
 [root@linuxstudy ~]# cal
     December 2018
@@ -23,6 +29,7 @@ Su Mo Tu We Th Fr Sa
 30 31
 该命令直接在命令行使用将显示本月公历日历并高亮当天的日期
 然后需要用到boxes这个命令将日历加"壳"
+
 ```sh
 [root@linuxstudy ~]# cal|boxes -d dog -p at1l7|boxes -d columns
  __^__                                           __^__
