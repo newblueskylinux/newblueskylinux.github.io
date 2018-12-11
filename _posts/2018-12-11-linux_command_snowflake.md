@@ -63,17 +63,17 @@ Su Mo Tu We Th Fr Sa
 
 ## 技术实现原理
 
-我们知道在unicode编码中有很多特殊字符，其中"雪花"的unicode编码就是u2744，别问我为什么是这个，我也不知道，想知道为什么的可以查看我另一片博文 特殊符号Unicode编码大全
-
 ### 获取关键参数
 
-此时我们要取三个关键参数，即你当前屏幕行值、列值、小于列值的随机数、"雪花"图形
+我们知道在unicode编码中有很多特殊字符，其中"雪花"的unicode编码就是u2744，别问我为什么是这个，我也不知道，想知道为什么的可以查看我另一片博文[特殊符号Unicode编码大全](http://newbluesky.top/2018/12/11/unicode_symbols/)
+
+因此我们要取三个关键参数，即你当前屏幕行值、列值、小于列值的随机数、"雪花"图形
 
 ```sh
 [root@linuxstudy ~]# echo $LINES $COLUMNS $(($RANDOM%$COLUMNS)) $(printf "\u2744\n")
 40 134 121 ❄
 ```
-我们现在想实现的是让雪花随机出现在这个38*132的屏幕内，并"落"到屏幕最下面一行，那么我们实现的逻辑是在屏幕内设定一个坐标系
+我们现在想实现的是让雪花随机出现在这个40*134的屏幕内，并"落"到屏幕最下面一行，那么我们实现的逻辑是在屏幕内设定一个坐标系
 
 ![img](http://t1.aixinxi.net/o_1cuf1u56skt11em11f51uoerfsa.png-j.jpg) 
 
@@ -95,16 +95,17 @@ Su Mo Tu We Th Fr Sa
 ```sh
 [root@linuxstudy ~]# while true;do echo $LINES $COLUMNS $(($RANDOM%$COLUMNS)) $(printf "\u2744\n");sleep 2;done|awk '{a[$3]=0;for(x in a) {y=a[x];a[x]=a[x]+1;printf "\033[%s;%sH ",y,x;printf "\033[%s;%sH%s \033[0;0H",a[x],x,$4;}}'
 ```
-为了让"雪花"落得快一些，我们将sleep时间缩短到0.1秒
 
 ![1544545541194](http://t1.aixinxi.net/o_1cuf218r9b0c62nmk49a7234a.gif-j.jpg)
+
+为了让"雪花"落得快一些，我们将sleep时间缩短到0.1秒
 
 ### 完整的代码
 
 ```sh
 [root@linuxstudy ~]# clear;printf "\n\n\n\n\n\n";cal|boxes -d dog -p at1l7|awk '{print "                                  "$0}'|boxes -d columns|lolcat;sleep 2;while true;do echo $LINES $COLUMNS $(($RANDOM%$COLUMNS)) $(printf "\u2744\n");sleep 0.1;done|awk '{a[$3]=0;for(x in a) {y=a[x];a[x]=a[x]+1;printf "\033[%s;%sH ",y,x;printf "\033[%s;%sH%s \033[0;0H",a[x],x,$4;}}'
 ```
-在上面的代码中，我为了美观，让这只"狗"跑到了屏幕中央，如果可以的话，加入一些用ANSI控制终端的代码可以让"雪花"也变成彩色，再输入前面加上\033[033m让雪花变成黄色
+在上面的代码中，我为了美观，打印了很多空格让这只"狗"跑到了屏幕中央，如果可以的话，加入一些用ANSI控制终端的代码可以让"雪花"也变成彩色，再输入前面加上\033[033m让雪花变成黄色
 ```sh
 [root@linuxstudy ~]# clear;printf "\n\n\n\n\n\n";cal|boxes -d dog -p at1l7|awk '{print "                                  "$0}'|boxes -d columns|lolcat;sleep 2;while true;do echo $LINES $COLUMNS $(($RANDOM%$COLUMNS)) $(printf "\u2744\n");sleep 0.1;done|awk '{a[$3]=0;for(x in a) {y=a[x];a[x]=a[x]+1;printf "\033[%s;%sH ",y,x;printf "\033[%s;%sH\033[033m%s \033[0;0H",a[x],x,$4;}}'
 ```
