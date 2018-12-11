@@ -18,6 +18,7 @@ author: 郑禹
 
 
 首先输出这个效果我们要知道cal这个命令，cal是单词calendar的缩写，在linux中视输出日历的命令
+```sh
 [root@linuxstudy ~]# cal
     December 2018
 Su Mo Tu We Th Fr Sa
@@ -27,6 +28,7 @@ Su Mo Tu We Th Fr Sa
 16 17 18 19 20 21 22
 23 24 25 26 27 28 29
 30 31
+```
 该命令直接在命令行使用将显示本月公历日历并高亮当天的日期
 然后需要用到boxes这个命令将日历加"壳"
 
@@ -63,7 +65,7 @@ Su Mo Tu We Th Fr Sa
 
 我们知道在unicode编码中有很多特殊字符，其中"雪花"的unicode编码就是u2744，别问我为什么是这个，我也不知道，想知道为什么的可以查看我另一片博文 特殊符号Unicode编码大全
 
-### 取关键参数
+### 获取关键参数
 
 此时我们要取三个关键参数，即你当前屏幕行值、列值、小于列值的随机数、"雪花"图形
 
@@ -88,6 +90,8 @@ Su Mo Tu We Th Fr Sa
 
 将循环数列的数值转换成坐标
 
+### 计算坐标
+
 ```sh
 [root@linuxstudy ~]# while true;do echo $LINES $COLUMNS $(($RANDOM%$COLUMNS)) $(printf "\u2744\n");sleep 2;done|awk '{a[$3]=0;for(x in a) {y=a[x];a[x]=a[x]+1;printf "\033[%s;%sH ",y,x;printf "\033[%s;%sH%s \033[0;0H",a[x],x,$4;}}'
 ```
@@ -95,7 +99,7 @@ Su Mo Tu We Th Fr Sa
 
 ![1544545541194](http://t1.aixinxi.net/o_1cuf218r9b0c62nmk49a7234a.gif-j.jpg)
 
-下面给出此程序完整的代码
+### 完整的代码
 
 ```sh
 [root@linuxstudy ~]# clear;printf "\n\n\n\n\n\n";cal|boxes -d dog -p at1l7|awk '{print "                                  "$0}'|boxes -d columns|lolcat;sleep 2;while true;do echo $LINES $COLUMNS $(($RANDOM%$COLUMNS)) $(printf "\u2744\n");sleep 0.1;done|awk '{a[$3]=0;for(x in a) {y=a[x];a[x]=a[x]+1;printf "\033[%s;%sH ",y,x;printf "\033[%s;%sH%s \033[0;0H",a[x],x,$4;}}'
@@ -111,6 +115,9 @@ Su Mo Tu We Th Fr Sa
 上面的代码需要用的命令需要cal,boxes,lolcat,其中cal命令系统存在系统基础包里，其他命令如果在使用中出现command not found则需要安装
 
 boxes一般需要使用epel源yum安装
-rhel6：rpm -ivh  http://mirrors.aliyun.com/epel/6/x86_64/Packages/e/epel-release-6-8.noarch.rpm 
-rhel7：rpm -ivh  http://mirrors.aliyun.com/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm
+
+rhel6：rpm -ivh  [http://mirrors.aliyun.com/epel/6/x86_64/Packages/e/epel-release-6-8.noarch.rpm](http://mirrors.aliyun.com/epel/6/x86_64/Packages/e/epel-release-6-8.noarch.rpm)
+
+rhel7：rpm -ivh  [http://mirrors.aliyun.com/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm](http://mirrors.aliyun.com/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm)
+
 lolcat则需要先安装ruby后使用gem安装
