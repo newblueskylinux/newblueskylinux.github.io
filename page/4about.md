@@ -14,7 +14,7 @@ type: page
 ![](http://t1.aixinxi.net/o_1cu8ek2oss4j1aa62kp14jo2rla.jpg-j.jpg)
 * 性别男
 * 毕业于长江大学
-* 死磕技术，不怕折腾；上开源无止境，吾将毕生而求索
+* 死磕技术，不怕折腾；开源无止境，吾将毕生而求索
 * 工作经历：
 <br />上海美都管理咨询有限公司
 <br />日播时尚教育有限公司
@@ -35,7 +35,7 @@ type: page
 
 ## 特别致谢
 
-感谢[Gaohaoyang](https://gaohaoyang.github.io)大佬的github以及教程帮我完成了这个网站的搭建，以及袁勇pythoner的支持，向技术上的前辈们致敬
+感谢[Gaohaoyang](https://gaohaoyang.github.io)大佬的github以及教程帮我完成了这个网站的搭建，以及[袁勇](http://blog.pythoner.world/)的支持，向技术上的前辈们致敬
 
 ## Comments
 
