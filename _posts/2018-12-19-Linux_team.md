@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "redhat和centos配置双网卡链路聚合"
+title:  "Linux配置双网卡链路聚合"
 categories: Linux
 tags: network team
 author: 郑禹
