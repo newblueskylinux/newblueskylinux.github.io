@@ -16,10 +16,15 @@ type: page
 * 毕业于长江大学
 * 死磕技术，不怕折腾；开源无止境，吾将毕生而求索
 * 工作经历：
-<br />上海美都管理咨询有限公司
-<br />日播时尚教育有限公司
-<br />上海旺旺食品集团有限公司
 
+上海美都管理咨询有限公司
+
+日播时尚教育有限公司
+
+上海旺旺食品集团有限公司
+
+<video src="http://t1.aixinxi.net/o_1cvp9r2pg17c4g7l7r0l1vh0ca.mp4" autoplay controls preload loop muted width="300px"></video>
+<video src="http://cloud.video.taobao.com//play/u/263674894/p/1/e/6/t/1/50072164318.mp4" autoplay controls preload loop muted width="300px"></video>
 
 ## 联系我
 * 手机：18321373745

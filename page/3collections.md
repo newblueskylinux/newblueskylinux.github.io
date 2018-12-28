@@ -31,9 +31,12 @@ type: page
 
     用于压缩 png 或 jpg 的在线工具
 
-* [图床 https://sm.ms/](https://sm.ms/)
+  [https://sm.ms/](https://sm.ms/)
+  [https://tu.aixinxi.net/](https://tu.aixinxi.net/)   注册个人账号可管理图片
+  [http://upload.ouliu.net/](http://upload.ouliu.net/) 无需注册即可使用，定时会清理
+* 图床
 
-    有 API 可用。
+* [图标制作工具https://tool.lu/c/webmaster](https://tool.lu/c/webmaster)
 
 * [新浪微博图床 Chrome扩展](https://github.com/Suxiaogang/WeiboPicBed)
 
