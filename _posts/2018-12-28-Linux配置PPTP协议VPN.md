@@ -56,7 +56,7 @@ ms-dns   8.8.8.8
 vi /etc/ppp/chap-secrets
 用户名 pptpd 密码 *
 zy        pptpd 123456 *
-···
+```
 ### 8.设置NAT流量转发和防火墙规则
 ```sh
 echo "1" > /proc/sys/net/ipv4/ip_forward
@@ -64,7 +64,7 @@ iptables -t nat -F       #清除原有的nat表中的规则，可不做
 iptables -F           #清除原有的filter有中的规则，可不做
 iptables -P FORWARD ACCEPT     #缺省允许IP转发
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE     #利用iptables 实现nat MASQUERADE 共享上网，此处eth0 需要是能够访问外部网络的网卡接口
-···
+```
 ### 9.开启pptpd 服务并开放防火墙的vpn对应端口1723和47
 ```sh
 iptables -I INPUT -p tcp --dport 1723 -j ACCEPT
@@ -73,10 +73,12 @@ iptables -I INPUT -p gre -j ACCEPT
 iptables -I FORWARD -p tcp --syn -i ppp+ -j TCPMSS --set-mss 1356
 systemctl start pptpd.service
 netstat -tunlp|grep  1723            #检查1723端口是否被监听
-···  
+```
 由于centos7中不能保存iptables，所以需要将nat设置写入/etc/rc.d/rc.local文件中
+```sh
 chmod +x /etc/rc.d/rc.local     #赋予rc.local执行权限
 vi /etc/rc.d/rc.local #编辑rc.local文件最后一行加入service iptables start 
+```
 
 ## 二、脚本一键配置VPN
 将下面代码保存为vpn_install.sh文件并执行chmod +x vpn_install.sh && ./vpn_install.sh 即可实现一键配置PPTPVPN
