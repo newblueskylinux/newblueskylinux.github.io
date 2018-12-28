@@ -9,13 +9,12 @@ author: 郑禹
 * content
 {:toc}
 ---
-
 将下面代码保存为vpn_install.sh文件并执行chmod +x vpn_install.sh && ./vpn_install.sh 即可实现一键配置PPTPVPN
 ```sh
 #!/bin/bash
 #
-# Author:  yeho <lj2007331 AT gmail.com>
-# Blog:  https://blog.linuxeye.com
+# Author:  zhengyu <zy544725571@outlook.com>
+# Blog:  https://newbluesky.top
 #
 # Installs a PPTP VPN-only system for CentOS
 
