@@ -23,9 +23,6 @@ type: page
 
 上海旺旺食品集团有限公司
 
-<video src="http://t1.aixinxi.net/o_1cvp9r2pg17c4g7l7r0l1vh0ca.mp4" autoplay controls preload loop muted width="300px"></video>
-<video src="http://cloud.video.taobao.com//play/u/263674894/p/1/e/6/t/1/50072164318.mp4" autoplay controls preload loop muted width="300px"></video>
-
 ## 联系我
 * 手机：18321373745
 * QQ：544725571
