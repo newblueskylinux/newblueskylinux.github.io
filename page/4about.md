@@ -31,7 +31,7 @@ type: page
 
 ## 特别致谢
 
-感谢[Gaohaoyang](https://gaohaoyang.github.io)大佬的github以及教程帮我完成了这个网站的搭建，以及[袁勇](http://blog.pythoner.world/)的支持，向技术上的前辈们致敬
+感谢[Gaohaoyang](https://gaohaoyang.github.io)大佬的github源码以及教程帮我完成了这个网站的搭建，以及[袁勇](http://blog.pythoner.world/)的支持，向技术上的前辈们致敬
 
 ## Comments
 

@@ -11,6 +11,10 @@ type: page
 
 ## 工具
 
+* 提取知乎视频链接
+	
+  [提取知乎视频链接](https://www.zhihuxiazai.com/?utm_source=zhihu)
+
 * [box-shadow generator](http://www.cssmatic.com/box-shadow)  生成 box-shadow 的工具
 
 * [gradient-generator](http://www.cssmatic.com/gradient-generator)  渐变生成器
@@ -22,7 +26,10 @@ type: page
 * [tiny png](https://tinypng.com/)   用于压缩 png 或 jpg 的在线工具
 
 * 图床
-  [sm.ms图床](https://sm.ms/) 
+
+  [sm.ms](https://sm.ms/) 
+  
+  [极简图床](http://www.jiantuku.com/#/)
   
   [爱信息图床](https://tu.aixinxi.net/)   注册个人账号可管理图片
   
