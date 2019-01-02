@@ -11,9 +11,7 @@ type: page
 
 ## 工具
 
-* 提取知乎视频链接
-	
-  [提取知乎视频链接](https://www.zhihuxiazai.com/?utm_source=zhihu)
+* [提取知乎视频链接](https://www.zhihuxiazai.com/?utm_source=zhihu)
 
 * [box-shadow generator](http://www.cssmatic.com/box-shadow)  生成 box-shadow 的工具
 
