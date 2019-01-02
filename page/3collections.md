@@ -34,10 +34,12 @@ type: page
   [爱信息图床](https://tu.aixinxi.net/)   注册个人账号可管理图片
   
   [偶流信息图床](http://upload.ouliu.net/) 无需注册即可使用，定时会清理
+   
+  [新浪微博图床 Chrome扩展](https://github.com/Suxiaogang/WeiboPicBed)
+  
+  [音乐图床](https://picosong.com)
 
 * [图标制作工具](https://tool.lu/c/webmaster)
-
-* [新浪微博图床 Chrome扩展](https://github.com/Suxiaogang/WeiboPicBed)
 
 * [Unix 时间戳 Unix timestamp](http://tool.chinaz.com/Tools/unixtime.aspx)
 
