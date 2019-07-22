@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "solaris10配置ntp服务"
-categories: Sloris 
+categories: Solaris 
 tags: solaris ntp
 author: 郑禹
 ---
