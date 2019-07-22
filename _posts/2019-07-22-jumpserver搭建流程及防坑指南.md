@@ -11,9 +11,17 @@ author: 郑禹
 ---
 ## 一、环境准备
 ### 1、创建/etc/inet/ntp.conf 
-* 系统版本： CentOS7.5（Redhat后面会报不支持，坑啊）
-* 网络环境：因为搭建过程中需要安装巨多包，所以还是老老实实连接公网吧。因为公司测试服务器不通外网，所以在公司内网里搭建了一台常规yum源服务器，准备用内网yum源全装所需要得安装包，后来发现有很多脚本还是要连到公网去下载，实在扛不住了，不然自己一个个去分析脚本，人都累死了。
-* 系统环境：建议关闭防火墙和seliux。实在不能关的，开启80，8080，5000，8081，2222端口，设置httpd_can_network_connect上下文为允许
+* 系统版本： 
+
+CentOS7.5（Redhat后面会报不支持，坑啊）
+
+* 网络环境：
+
+因为搭建过程中需要安装巨多包，所以还是老老实实连接公网吧。因为公司测试服务器不通外网，所以在公司内网里搭建了一台常规yum源服务器，准备用内网yum源全装所需要得安装包，后来发现有很多脚本还是要连到公网去下载，实在扛不住了，不然自己一个个去分析脚本，人都累死了。
+
+* 系统环境：
+
+建议关闭防火墙和seliux。实在不能关的，开启80，8080，5000，8081，2222端口，设置httpd_can_network_connect上下文为允许
 
 ```sh
 firewall-cmd --zone=public --add-port=80/tcp --permanent
@@ -28,7 +36,8 @@ setsebool -P httpd_can_network_connect 1
 
 
 ## 二、安装所需软件包和准备yum源
-* 常规yum源：建议使用aliyun或者网易163的yum源，否则CentOS的官方源会让你奔溃
+* 常规yum源：
+建议使用aliyun或者网易163的yum源，否则CentOS的官方源会让你奔溃
 ```sh
 wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 ```
@@ -94,7 +103,9 @@ wget https://demo.jumpserver.org/download/luna/1.5.0/luna.tar.gz; tar xf luna.ta
 yum -y install $(cat /opt/jumpserver/requirements/rpm_requirements.txt
 ```
 我的系统文件内容是下面这些
+
 libtiff-devel libjpeg-devel libzip-devel freetype-devel lcms2-devel libwebp-devel tcl-devel tk-devel sshpass openldap-devel mariadb-devel mysql-devel libffi-devel openssh-clients telnet openldap-clients 
+
 根据前面安装过程中的安装成功与否，这个文件内容可能不同，但这些组件一定不能有error，否则会造成后面jumpserver起不来
 安装自动化运维工具ansible
 ```sh
@@ -109,6 +120,7 @@ pip install $(cat /opt/jumpserver/requirements/requirements.txt | grep python-ke
 pip install -r /opt/jumpserver/requirements/requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
 ```
 * 这一步在我的系统上有两个error：
+
 elasticsearch 6.1.1 has requirement urllib3<1.23,>=1.21.1, but you'll have urllib3 1.25.2 which is incompatible.
 django-radius 1.3.3 has requirement future==0.16.0, but you'll have future 0.17.1 which is incompatible. 
 使用如下命令重新安装下对应版本就可以了
@@ -180,8 +192,5 @@ wget -O /opt/stop_jms.sh https://demo.jumpserver.org/download/shell/centos/stop_
 chmod +x /etc/rc.d/rc.local
 ```
 启动停止的脚本为/opt/start_jms.sh, 如果自启失败可以手动启动
-在SERVER-IP前面显示*为客户端同步正常 
-无论服务器端还是客户端的ntp -q显示结果，reach值代表是否与服务器端有连接，这个数值一直增大，则基本可以判定连接正常，同时，disp值也会逐渐变小。 
-先起服务器端服务，待服务器端确认正常后，再起客户端服务。服务器启动和时间同步都需要比较长的一段时间，请耐心等待
 
 ---
