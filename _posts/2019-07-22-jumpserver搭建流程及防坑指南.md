@@ -23,6 +23,11 @@ CentOS7.5（Redhat后面会报不支持，坑啊）
 
 建议关闭防火墙和seliux。实在不能关的，开启80，8080，5000，8081，2222端口，设置httpd_can_network_connect上下文为允许
 
+
+
+
+
+
 ```sh
 firewall-cmd --zone=public --add-port=80/tcp --permanent
 firewall-cmd --zone=public --add-port=2222/tcp --permanent
@@ -31,13 +36,11 @@ firewall-cmd --reload
 setsebool -P httpd_can_network_connect 1
 ```
 
-
-
-
-
 ## 二、安装所需软件包和准备yum源
 * 常规yum源：
+
 建议使用aliyun或者网易163的yum源，否则CentOS的官方源会让你奔溃
+
 ```sh
 wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 ```
