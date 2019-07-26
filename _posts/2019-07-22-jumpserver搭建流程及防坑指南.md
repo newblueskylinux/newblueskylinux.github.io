@@ -99,11 +99,11 @@ python3.6 -m venv /opt/py3
 ```sh
 cd /opt
 git clone --depth=1 https://github.com/jumpserver/jumpserver.git
-wget https://demo.jumpserver.org/download/luna/1.5.0/luna.tar.gz; tar xf luna.tar.gz; chown -R root:root luna
+wget https://demo.jumpserver.org/download/luna/1.5.2/luna.tar.gz; tar xf luna.tar.gz; chown -R root:root luna
 ```
 安装jumpserver所需要的组件，这个组件包最好去查看/opt/jumpserver/requirements/rpm_requirements.txt文件里面的内容
 ```sh
-yum -y install $(cat /opt/jumpserver/requirements/rpm_requirements.txt
+yum -y install $(cat /opt/jumpserver/requirements/rpm_requirements.txt)
 ```
 我的系统文件内容是下面这些
 
@@ -136,8 +136,8 @@ pip install urllib3==1.22
 ```sh
 curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://f1361db2.m.daocloud.io
 systemctl restart docker
-docker pull jumpserver/jms_koko:1.5.0
-docker pull jumpserver/jms_guacamole:1.5.0
+docker pull jumpserver/jms_koko:1.5.2
+docker pull jumpserver/jms_guacamole:1.5.2
 ```
 配置nginx文件
 ```sh
@@ -174,8 +174,8 @@ sed -i "s/DB_PASSWORD: /DB_PASSWORD: $DB_PASSWORD/g" /opt/jumpserver/config.yml
 systemctl start nginx
 cd /opt/jumpserver
 ./jms start all -d
-docker run --name jms_koko -d -p 2222:2222 -p 5000:5000 -e CORE_HOST=http://$Server_IP:8080 -e BOOTSTRAP_TOKEN=$BOOTSTRAP_TOKEN jumpserver/jms_koko:1.5.0
-docker run --name jms_guacamole -d -p 8081:8081 -e JUMPSERVER_SERVER=http://$Server_IP:8080 -e BOOTSTRAP_TOKEN=$BOOTSTRAP_TOKEN jumpserver/jms_guacamole:1.5.0
+docker run --name jms_koko -d -p 2222:2222 -p 5000:5000 -e CORE_HOST=http://$Server_IP:8080 -e BOOTSTRAP_TOKEN=$BOOTSTRAP_TOKEN jumpserver/jms_koko:1.5.2
+docker run --name jms_guacamole -d -p 8081:8081 -e JUMPSERVER_SERVER=http://$Server_IP:8080 -e BOOTSTRAP_TOKEN=$BOOTSTRAP_TOKEN jumpserver/jms_guacamole:1.5.2
 systemctl restart nginx
 ```
 显示当前配置信息
