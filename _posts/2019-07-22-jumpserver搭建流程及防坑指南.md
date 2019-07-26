@@ -10,8 +10,8 @@ author: 郑禹
 {:toc}
 ---
 ## 一、环境准备
-### 1、创建/etc/inet/ntp.conf 
-* 系统版本： 
+
+* 系统版本：
 
 CentOS7.5（Redhat后面会报不支持，坑啊）
 
@@ -21,7 +21,7 @@ CentOS7.5（Redhat后面会报不支持，坑啊）
 
 * 系统环境：
 
-建议关闭防火墙和seliux。实在不能关的，开启80，8080，5000，8081，2222端口，设置httpd_can_network_connect上下文为允许
+建议关闭seliux，或设置httpd_can_network_connect上下文为允许实在不能关的。防火墙开启80，2222端口，如果后续设置https还需要开启443端口
 
 
 
@@ -126,6 +126,7 @@ pip install -r /opt/jumpserver/requirements/requirements.txt -i https://mirrors.
 
 elasticsearch 6.1.1 has requirement urllib3<1.23,>=1.21.1, but you'll have urllib3 1.25.2 which is incompatible.
 django-radius 1.3.3 has requirement future==0.16.0, but you'll have future 0.17.1 which is incompatible. 
+
 使用如下命令重新安装下对应版本就可以了
 ```sh
 pip install future==0.16.0
