@@ -11,7 +11,8 @@ type: page
 
 ## 个人信息
 
-![](http://newbluesky.top/img/2cun.jpg onload='if (this.width>140 || this.height>226) if (this.width/this.height>140/226) this.width=140; else this.height=226;')
+<div align=center><img width="200" height="400" src="http://newbluesky.top/img/2cun.jpg"/></div>
+
 * 性别男
 * 毕业于长江大学
 * 死磕技术，不怕折腾；开源无止境，吾将毕生而求索
