@@ -11,13 +11,17 @@ type: page
 
 ## 个人信息
 
-<img src="http://newbluesky.top/img/2cun.jpg" width="220px">
+<img src="http://newbluesky.top/img/jntm.jpg" width="220px">
 
-* 性别男
+* 姓名：郑禹
 
-* 毕业于长江大学
+* 性别：男
 
-* 死磕技术，不怕折腾；开源无止境，吾将毕生而求索
+* 爱好：唱、跳、RAP和篮球、Music
+
+* 于2015年6月毕业于长江大学
+
+* 人生箴言：死磕技术，不怕折腾；开源无止境，吾将毕生而求索
 
 * 工作经历：
 
@@ -27,10 +31,11 @@ type: page
 
   [上海旺旺食品集团有限公司](http://www.wantwant.com.cn/)(2018.4-至今)
 
+
 ## 联系我
-* 手机：18321373745
-* QQ：544725571
-* Email：544725571@qq.com
+* 手机：183xxxx3745
+* QQ：544xxxx71
+* Email：544xxxx71@qq.com
 * GitHub：[https://github.com/newblueskylinux](https://github.com/newblueskylinux)
 * 微博：[http://weibo.com/zhyrh1314](http://weibo.com/zhyrh1314)
 * 知乎：[https://www.zhihu.com/people/zhengyu1992](https://www.zhihu.com/people/zhengyu1992)
