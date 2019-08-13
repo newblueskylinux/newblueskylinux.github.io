@@ -11,7 +11,7 @@ type: page
 
 ## 个人信息
 
-<div align=center><img width="200" height="400" src="http://newbluesky.top/img/2cun.jpg"/></div>
+<img src="http://newbluesky.top/img/2cun.jpg" width="220px">
 
 * 性别男
 * 毕业于长江大学
