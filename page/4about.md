@@ -11,7 +11,7 @@ type: page
 
 ## 个人信息
 
-![](http://t1.aixinxi.net/o_1cu8ek2oss4j1aa62kp14jo2rla.jpg-j.jpg)
+![](http://newbluesky.top/img/2cun.jpg)
 * 性别男
 * 毕业于长江大学
 * 死磕技术，不怕折腾；开源无止境，吾将毕生而求索
