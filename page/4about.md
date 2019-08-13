@@ -11,7 +11,7 @@ type: page
 
 ## 个人信息
 
-<img src="http://newbluesky.top/img/jntm.jpg" width="220px">
+<img src="http://newbluesky.top/img/jntm.png" width="220px">
 
 * 姓名：郑禹
 
