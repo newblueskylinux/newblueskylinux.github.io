@@ -19,7 +19,7 @@ author: 郑禹
 
 如果没有安装的话，按下面步骤安装即可（注意是主机而非容器或镜像）
 
-* 具体的安装命令如下：
+具体的安装命令如下：
 ```sh
 wget https://www.kernel.org/pub/linux/utils/util-linux/v2.24/util-linux-2.24.tar.gz  
 tar -xzvf util-linux-2.24.tar.gz  
@@ -33,17 +33,17 @@ sudo cp nsenter /usr/local/bin
 
 
 
-* 在redhat7以后的版本中可以直接使用yum安装
+在redhat7以后的版本中可以直接使用yum安装
 ```sh
 yum install nsenter
 ```
-* 安装好nsenter之后可以查看一下该命令的使用
+安装好nsenter之后可以查看一下该命令的使用
 
 <img src="http://newbluesky.top/img/nsenter1.png">
 
 nsenter可以访问另一个进程的名称空间。所以为了连接到某个容器我们还需要获取该容器的第一个进程的PID。可以使用docker inspect命令来拿到该PID
 
-* docker inspect命令使用如下：
+docker inspect命令使用如下：
 ```sh
 docker inspect --help 
 ```
