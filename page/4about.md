@@ -22,9 +22,9 @@ type: page
 * 手机：18321373745
 * QQ：544725571
 * Email：544725571@qq.com
-* [GitHub](https://github.com/newblueskylinux)
-* [微博](http://weibo.com/zhyrh1314)
-* [知乎](https://www.zhihu.com/people/zhengyu1992)
+* GitHub：[https://github.com/newblueskylinux](https://github.com/newblueskylinux)
+* 微博：[http://weibo.com/zhyrh1314](http://weibo.com/zhyrh1314)
+* 知乎：[https://www.zhihu.com/people/zhengyu1992](https://www.zhihu.com/people/zhengyu1992)
 
 ## 友情链接
 
