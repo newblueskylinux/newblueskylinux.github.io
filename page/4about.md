@@ -21,7 +21,7 @@ type: page
 
 * 工作经历：
 
-  [上海美都管理咨询有限公司]{http://www.metro-education.cn/}(2015.7-2016.12)
+  [上海美都管理咨询有限公司](http://www.metro-education.cn/)(2015.7-2016.12)
 
   [日播时尚集团](http://www.ribo-group.com/)(2016.12-2018.4)
 

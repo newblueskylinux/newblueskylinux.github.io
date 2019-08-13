@@ -81,7 +81,7 @@ nsenter --target 2571 --mount --uts --ipc --net --pid /bin/su
 
 <img src="http://newbluesky.top/img/nsenter5.png">
 
-## 脚本方式：
+# 脚本方式：
 ```sh
 vi dockerin.sh
 #!/bin/bash
@@ -93,7 +93,7 @@ else
 /bin/nsenter --target $pid --mount --uts --ipc --net --pid /bin/su
 fi
 ```
-* 使用方式
+使用方式
 ```sh
 sh dockerin.sh 容器id
 ```
