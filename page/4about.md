@@ -18,9 +18,12 @@ type: page
 * 于2015年毕业于长江大学
 * 人生箴言：死磕技术，不怕折腾；开源无止境，吾将毕生而求索
 * 工作经历：
-	[美都教育](http://www.metro-education.cn/)
-	[日播集团](http://www.ribo-group.com/)
-	[旺旺集团](http://www.wantwant.com.cn/)
+
+	[美都教育](http://www.metro-education.cn/)（2015.7-2016.12）
+
+	[日播集团](http://www.ribo-group.com/)（2016.12-2018.4）
+
+	[旺旺集团](http://www.wantwant.com.cn/)（2018.4-至今）
 
 ## 联系我
 * 手机：183****3745
