@@ -13,33 +13,39 @@ author: 郑禹
 
 * 系统版本：
 
-CentOS7.5（Redhat后面会报不支持，坑啊）
+CentOS7.5（Redhat后面会报不支持）
 
 * 网络环境：
 
-因为搭建过程中需要安装巨多包，所以还是老老实实连接公网吧。因为公司测试服务器不通外网，所以在公司内网里搭建了一台常规yum源服务器，准备用内网yum源全装所需要得安装包，后来发现有很多脚本还是要连到公网去下载最终还是放弃了。
+因为搭建过程中需要安装很多包，所以需要连接公网下载。
+
+我测试的时候因为公司测试服务器不能通外网，所以在公司内网里搭建了一台可以通外网的服务器做yum源服务器，准备用内网yum源全装所需要得安装包，后来发现有很多脚本要下载，最终还是是通过yum源服务器做代理服务器上外网下载的
 
 * 系统环境：
 
-建议关闭seliux，或设置httpd_can_network_connect上下文为允许实在不能关的。防火墙开启80，2222端口，如果后续设置https还需要开启443端口
+建议关闭seliux（强烈建议），有需求不能关闭selinux的需要使用以下命令设置上下文
+```sh
+setsebool -P httpd_can_network_connect 1
+```
+firewalld防火墙开启80端口，如果需要做https的话还要开启443端口
+
+如果需要通过ssh访问koko的话建议firewalld还需要开启2222端口，如果要做多节点的话建议再开2220端口
 
 
 
 
 
-
+* 防火墙设置
 ```sh
 firewall-cmd --zone=public --add-port=80/tcp --permanent
-firewall-cmd --zone=public --add-port=2222/tcp --permanent
 firewall-cmd --permanent --add-rich-rule="rule family="ipv4" source address="172.17.0.0/16" port protocol="tcp" port="8080" accept"
 firewall-cmd --reload
-setsebool -P httpd_can_network_connect 1
 ```
 
 ## 二、安装所需软件包和准备yum源
-* 常规yum源：
+* 配置常规yum源：
 
-建议使用aliyun或者网易163的yum源，否则CentOS的官方源会让你奔溃
+建议使用aliyun或者网易163的yum源，否则CentOS的官方源因为站点在国外，下载数据可能会比较慢
 
 ```sh
 wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
@@ -52,7 +58,7 @@ yum update -y
 ```sh
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
-安装中文语言包，设置英文环境熟悉的可以不做这一步
+安装中文语言包
 ```sh
 yum -y install kde-l10n-Chinese
 localedef -c -f UTF-8 -i zh_CN zh_CN.UTF-8
@@ -79,7 +85,8 @@ rpm --import https://nginx.org/keys/nginx_signing.key
 ```sh
 yum -y install redis mariadb mariadb-devel mariadb-server MariaDB-shared nginx docker-ce
 ```
-这里因为我是用其他机器代理上的外网，可能会提示yum秘钥问题导致polkit-pkla-compat-0.1-4.el7.x86_64.rpm无法安装，可以从其它机器上拷贝过来rpm安装
+这里因为我是用其他机器代理上的外网，可能会提示yum秘钥问题导致polkit-pkla-compat-0.1-4.el7.x86_64.rpm无法安装，也可以从其它机器上拷贝过来rpm安装
+
 启动web服务、数据库和docker并加入开机自启
 ```sh
 systemctl enable redis mariadb nginx docker
@@ -87,6 +94,7 @@ systemctl start redis mariadb
 ```
 
 ## 三、下载组件
+
 安装python3.6和库文件
 ```sh
 yum -y install python36 python36-devel
@@ -110,6 +118,7 @@ yum -y install $(cat /opt/jumpserver/requirements/rpm_requirements.txt)
 libtiff-devel libjpeg-devel libzip-devel freetype-devel lcms2-devel libwebp-devel tcl-devel tk-devel sshpass openldap-devel mariadb-devel mysql-devel libffi-devel openssh-clients telnet openldap-clients 
 
 根据前面安装过程中的安装成功与否，这个文件内容可能不同，但这些组件一定不能有error，否则会造成后面jumpserver起不来
+
 安装自动化运维工具ansible
 ```sh
 source /opt/py3/bin/activate
@@ -124,8 +133,11 @@ pip install -r /opt/jumpserver/requirements/requirements.txt -i https://mirrors.
 ```
 * 这一步在我的系统上有两个error：
 
-elasticsearch 6.1.1 has requirement urllib3<1.23,>=1.21.1, but you'll have urllib3 1.25.2 which is incompatible.
-django-radius 1.3.3 has requirement future==0.16.0, but you'll have future 0.17.1 which is incompatible. 
+<font size="4" color="blue">* 这一步在我的系统上有两个error：</font>
+
+<font size="4" color="red">elasticsearch 6.1.1 has requirement urllib3<1.23,>=1.21.1, but you'll have urllib3 1.25.2 which is incompatible. </font>
+
+<font size="4" color="red">django-radius 1.3.3 has requirement future==0.16.0, but you'll have future 0.17.1 which is incompatible. </font>
 
 使用如下命令重新安装下对应版本就可以了
 ```sh
@@ -146,6 +158,7 @@ wget -O /etc/nginx/conf.d/jumpserver.conf https://demo.jumpserver.org/download/n
 ```
 
 ## 四、处理配置文件
+
 生成随机密码文件
 ```sh
 source ~/.bashrc
