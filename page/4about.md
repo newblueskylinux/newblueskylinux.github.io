@@ -11,17 +11,21 @@ type: page
 
 ## 个人信息
 
-<img src="http://newbluesky.top/img/2cun.jpg" width="220px">
+<img src="http://newbluesky.top/img/jntm.png" width="220px">
 
-* 性别男
-* 毕业于长江大学
-* 死磕技术，不怕折腾；开源无止境，吾将毕生而求索
-* 工作经历：上海美都管理咨询有限公司;日播时尚教育有限公司;上海旺旺食品集团有限公司
+* 性别：男
+* 爱好：唱、跳、RAP和篮球
+* 于2015年毕业于长江大学
+* 人生箴言：死磕技术，不怕折腾；开源无止境，吾将毕生而求索
+* 工作经历：
+	[美都教育](http://www.metro-education.cn/)
+	[日播集团](http://www.ribo-group.com/)
+	[旺旺集团](http://www.wantwant.com.cn/)
 
 ## 联系我
-* 手机：18321373745
-* QQ：544725571
-* Email：544725571@qq.com
+* 手机：183****3745
+* QQ：544****71
+* Email：544****71@qq.com
 * [GitHub](https://github.com/newblueskylinux)
 * [微博](http://weibo.com/zhyrh1314)
 * [知乎](https://www.zhihu.com/people/zhengyu1992)
