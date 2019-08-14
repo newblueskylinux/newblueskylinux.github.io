@@ -115,7 +115,7 @@ yum -y install $(cat /opt/jumpserver/requirements/rpm_requirements.txt)
 ```
 我的系统文件内容是下面这些
 <font size="2.5" color="red">libtiff-devel libjpeg-devel libzip-devel freetype-devel lcms2-devel libwebp-devel tcl-devel tk-devel sshpass openldap-devel mariadb-devel mysql-devel libffi-devel openssh-clients telnet openldap-clients</font>
-
+<br />
 根据前面安装过程中的安装成功与否，这个文件内容可能不同，但这些组件一定不能有error，否则会造成后面jumpserver起不来
 
 安装自动化运维工具ansible
@@ -133,7 +133,7 @@ pip install -r /opt/jumpserver/requirements/requirements.txt -i https://mirrors.
 * 这一步在我的系统上有两个error：
 <font size="2.5" color="red">elasticsearch 6.1.1 has requirement urllib3<1.23,>=1.21.1, but you'll have urllib3 1.25.2 which is incompatible. </font>
 <font size="2.5" color="red">django-radius 1.3.3 has requirement future==0.16.0, but you'll have future 0.17.1 which is incompatible. </font>
-
+<br />
 使用如下命令重新安装下对应版本就可以了
 ```sh
 pip install future==0.16.0
