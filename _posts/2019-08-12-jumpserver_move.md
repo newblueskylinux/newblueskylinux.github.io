@@ -144,8 +144,8 @@ crontab -e
 ```
 ## 八、恢复https的证书文件
 
-如果只放在公司局域网内需要自签名证书，具体过程参照我另一篇博文
-[利用openssl创建https证书](http://newbluesky.top/2019/08/10/ssl_self/)
+如果只放在公司局域网内需要自签名证书，具体过程参照我另一篇博文，[利用openssl创建https证书](http://newbluesky.top/2019/08/10/ssl_self/)
+
 ## 九、恢复录像文件
 
 [利用openssl创建https证书](http://newbluesky.top/2019/08/10/ssl_self/)
