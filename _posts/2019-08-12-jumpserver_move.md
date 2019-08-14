@@ -81,7 +81,6 @@ docker run --name jms_guacamole01 -d -p 8081:8081 -e JUMPSERVER_SERVER=http://$S
 docker run --name jms_guacamole02 -d -p 8082:8081 -e JUMPSERVER_SERVER=http://$Server_IP:8080 -e BOOTSTRAP_TOKEN=$BOOTSTRAP_TOKEN jumpserver/jms_guacamole:1.5.2
 docker run --name jms_guacamole03 -d -p 8083:8081 -e JUMPSERVER_SERVER=http://$Server_IP:8080 -e BOOTSTRAP_TOKEN=$BOOTSTRAP_TOKEN jumpserver/jms_guacamole:1.5.2
 ```
-上面的BOOTSTRAP_TOKEN值根据我们上面的实际值更改，ip地址也修改为自身实际ip地址
 
 ## 六、修改启动脚本和停止脚本
 ```sh
@@ -144,7 +143,7 @@ crontab -e
 ```
 ## 八、恢复https的证书文件
 
-如果只放在公司局域网内需要自签名证书，具体过程参照我另一篇博文，[利用openssl创建https证书](http://newbluesky.top/2019/08/10/ssl_self/)
+如果只放在公司局域网内需要自签名证书，具体过程参照我另一篇博文，[利用openssl创建https证书](http://newbluesky.top/2019/07/24/ssl_self/)
 
 ## 九、恢复录像文件
 

@@ -33,7 +33,7 @@ server {
 <img src="http://newbluesky.top/img/jumpserver_ssl2.png">
 <font size="2.5" color="red">修改完成之后内容如图所示</font>
 <br />
-这里的crt文件和key文件可向ssl证书申请机构申请购买，如果只放在公司局域网内需要自签名证书，具体过程参照我另一篇博文，[利用openssl创建https证书](http://newbluesky.top/2019/08/10/ssl_self/)
+这里的crt文件和key文件可向ssl证书申请机构申请购买，如果只放在公司局域网内需要自签名证书，具体过程参照我另一篇博文，[利用openssl创建https证书](http://newbluesky.top/2019/07/24/ssl_self/)
 
 重新加载nginx配置文件或重启nginx生效
 ```sh
