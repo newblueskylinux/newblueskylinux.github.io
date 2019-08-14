@@ -19,6 +19,10 @@ author: 郑禹
 
 可通过登录jumpserver操作系统，修改数据库 users_user 表对应用户的 otp_level 为 0
 
+
+
+
+
 ### 关闭MFA功能
 
 下次开启MFA功能时继续使用上次绑定的MFA令牌，admin 为要修改的用户

@@ -16,7 +16,6 @@ author: 郑禹
 ### 一、创建Docker
 
 查看当前运行的docker
-
 ```sh
 docker ps
 ```
@@ -27,6 +26,11 @@ docker ps
 ```sh
 docker ps -a
 ```
+
+
+
+
+
 ### 二、删除原本的docker
 ```sh
 docker rm dockerID -f    #加上-f参数可删除正在运行的docker
@@ -101,6 +105,7 @@ systemctl reload nginx
 vi /etc/nginx/nginx.conf
 ```
 <img src="http://newbluesky.top/img/jumpserver_lvs4.png">
+
 在图示这部分内容下添加下面一段代码
 ```sh
 # 加入 tcp 代理
@@ -142,7 +147,7 @@ firewall-cmd --reload
 重新加载nginx配置文件或重启nginx生效
 ```sh
 systemctl reload nginx 
-systemctl restart nginx
+或systemctl restart nginx
 ```
 
 ---
