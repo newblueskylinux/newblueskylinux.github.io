@@ -35,7 +35,7 @@ firewalld防火墙开启80端口，如果需要做https的话还要开启443端�
 
 
 
-* 防火墙设置
+防火墙设置
 ```sh
 firewall-cmd --zone=public --add-port=80/tcp --permanent
 firewall-cmd --permanent --add-rich-rule="rule family="ipv4" source address="172.17.0.0/16" port protocol="tcp" port="8080" accept"
@@ -43,7 +43,7 @@ firewall-cmd --reload
 ```
 
 ## 二、安装所需软件包和准备yum源
-* 配置常规yum源：
+配置常规yum源：
 
 建议使用aliyun或者网易163的yum源，否则CentOS的官方源因为站点在国外，下载数据可能会比较慢
 
@@ -133,10 +133,9 @@ pip install -r /opt/jumpserver/requirements/requirements.txt -i https://mirrors.
 ```
 * 这一步在我的系统上有两个error：
 
-<font size="4" color="blue">* 这一步在我的系统上有两个error：</font>
-
 <font size="4" color="red">elasticsearch 6.1.1 has requirement urllib3<1.23,>=1.21.1, but you'll have urllib3 1.25.2 which is incompatible. </font>
-
+<br />
+<br />
 <font size="4" color="red">django-radius 1.3.3 has requirement future==0.16.0, but you'll have future 0.17.1 which is incompatible. </font>
 
 使用如下命令重新安装下对应版本就可以了
