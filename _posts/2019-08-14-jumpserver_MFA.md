@@ -27,7 +27,7 @@ mysql -uroot
 > use jumpserver;
 > update users_user set otp_level='0' where username='admin'; 
 ```
-###通过数据库重置MFA令牌
+### 通过数据库重置MFA令牌
 
 修改数据库 _otp_secret_key 为 0 ,绑定新的MFA令牌
 ```sh
