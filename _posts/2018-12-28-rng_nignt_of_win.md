@@ -10,7 +10,9 @@ author: 郑禹
 {:toc}
 ---
 知乎回答：[如何看待本次MSI决赛KZ选择放小狗的卡莎和the rang的奥恩？](https://www.zhihu.com/question/277983253/answer/397127833)
+
 --同时选出一个不算很擅长的前中期打团阵容，是打算放手一搏吗？
+
 <video src="http://newbluesky.top/video/1565684941080401.mp4" autoplay controls preload loop muted width="300px"></video>
 * 请问，看到我们的召唤师了吗？
 * 看到了，但他不会再回来了！
