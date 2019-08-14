@@ -16,7 +16,7 @@ type: page
 * 性别：男
 * 爱好：唱、跳、RAP和篮球
 * 于2015年毕业于长江大学
-* 人生箴言：死磕技术，不怕折腾；开源无止境，吾将毕生而求索
+* 工作箴言：死磕技术，不怕折腾；开源无止境，吾将毕生而求索
 * 工作经历：
 
 	[美都教育](http://www.metro-education.cn/)（2015.7-2016.12）
@@ -28,6 +28,7 @@ type: page
 ## 联系我
 * 手机：183****3745
 * QQ：544****71
+* 微信：同手机号
 * Email：544****71@qq.com
 * [GitHub](https://github.com/newblueskylinux)
 * [微博](http://weibo.com/zhyrh1314)
