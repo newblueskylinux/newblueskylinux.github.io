@@ -147,8 +147,6 @@ crontab -e
 
 ## 九、恢复录像文件
 
-[利用openssl创建https证书](http://newbluesky.top/2019/08/10/ssl_self/)
-
 将前面备份的media目录导入到新系统的media目录中即可
 
 * 做到这里，原本数据基本已经恢复，如果发现授权出现在未分组情况可尝试退出session重进或尝试在资产列表重新建一个资产让所有资产数据库刷新
