@@ -114,7 +114,7 @@ wget https://demo.jumpserver.org/download/luna/1.5.2/luna.tar.gz; tar xf luna.ta
 yum -y install $(cat /opt/jumpserver/requirements/rpm_requirements.txt)
 ```
 我的系统文件内容是下面这些
-<font size="2.5" color="red">libtiff-devel libjpeg-devel libzip-devel freetype-devel lcms2-devel libwebp-devel tcl-devel tk-devel sshpass openldap-devel mariadb-devel mysql-devel libffi-devel openssh-clients telnet openldap-clients</font>
+<font size="2.5" color="green">libtiff-devel libjpeg-devel libzip-devel freetype-devel lcms2-devel libwebp-devel tcl-devel tk-devel sshpass openldap-devel mariadb-devel mysql-devel libffi-devel openssh-clients telnet openldap-clients</font>
 <br />
 根据前面安装过程中的安装成功与否，这个文件内容可能不同，但这些组件一定不能有error，否则会造成后面jumpserver起不来
 

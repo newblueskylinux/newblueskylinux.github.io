@@ -71,17 +71,15 @@ source /opt/py3/bin/activate
 
 添加koko节点
 ```sh
-docker run --name jms_koko01 -d -p 2222:2222 -p 5000:5000 -e CORE_HOST=http://10.0.110.220:8080 -e BOOTSTRAP_TOKEN=aLoCLqQn829daTny jumpserver/jms_koko:1.5.2
-docker run --name jms_koko02 -d -p 2223:2222 -p 5001:5000 -e CORE_HOST=http://10.0.110.220:8080 -e BOOTSTRAP_TOKEN=aLoCLqQn829daTny jumpserver/jms_koko:1.5.2
-docker run --name jms_koko03 -d -p 2224:2222 -p 5002:5000 -e CORE_HOST=http://10.0.110.220:8080 -e BOOTSTRAP_TOKEN=aLoCLqQn829daTny jumpserver/jms_koko:1.5.2
-docker run --name jms_koko04 -d -p 2225:2222 -p 5003:5000 -e CORE_HOST=http://10.0.110.220:8080 -e BOOTSTRAP_TOKEN=aLoCLqQn829daTny jumpserver/jms_koko:1.5.2
+docker run --name jms_koko01 -d -p 2222:2222 -p 5000:5000 -e CORE_HOST=http://$Server_IP:8080 -e BOOTSTRAP_TOKEN=$BOOTSTRAP_TOKEN jumpserver/jms_koko:1.5.2
+docker run --name jms_koko02 -d -p 2223:2222 -p 5001:5000 -e CORE_HOST=http://$Server_IP:8080 -e BOOTSTRAP_TOKEN=$BOOTSTRAP_TOKEN jumpserver/jms_koko:1.5.2
+docker run --name jms_koko03 -d -p 2224:2222 -p 5002:5000 -e CORE_HOST=http://$Server_IP:8080 -e BOOTSTRAP_TOKEN=$BOOTSTRAP_TOKEN jumpserver/jms_koko:1.5.2
 ```
 添加guacamole节点
 ```sh
-docker run --name jms_guacamole01 -d -p 8081:8081 -e JUMPSERVER_SERVER=http://10.0.110.220:8080 -e BOOTSTRAP_TOKEN=aLoCLqQn829daTny jumpserver/jms_guacamole:1.5.2
-docker run --name jms_guacamole02 -d -p 8082:8081 -e JUMPSERVER_SERVER=http://10.0.110.220:8080 -e BOOTSTRAP_TOKEN=aLoCLqQn829daTny jumpserver/jms_guacamole:1.5.2
-docker run --name jms_guacamole03 -d -p 8083:8081 -e JUMPSERVER_SERVER=http://10.0.110.220:8080 -e BOOTSTRAP_TOKEN=aLoCLqQn829daTny jumpserver/jms_guacamole:1.5.2
-docker run --name jms_guacamole04 -d -p 8084:8081 -e JUMPSERVER_SERVER=http://10.0.110.220:8080 -e BOOTSTRAP_TOKEN=aLoCLqQn829daTny jumpserver/jms_guacamole:1.5.2
+docker run --name jms_guacamole01 -d -p 8081:8081 -e JUMPSERVER_SERVER=http://$Server_IP:8080 -e BOOTSTRAP_TOKEN=$BOOTSTRAP_TOKEN jumpserver/jms_guacamole:1.5.2
+docker run --name jms_guacamole02 -d -p 8082:8081 -e JUMPSERVER_SERVER=http://$Server_IP:8080 -e BOOTSTRAP_TOKEN=$BOOTSTRAP_TOKEN jumpserver/jms_guacamole:1.5.2
+docker run --name jms_guacamole03 -d -p 8083:8081 -e JUMPSERVER_SERVER=http://$Server_IP:8080 -e BOOTSTRAP_TOKEN=$BOOTSTRAP_TOKEN jumpserver/jms_guacamole:1.5.2
 ```
 上面的BOOTSTRAP_TOKEN值根据我们上面的实际值更改，ip地址也修改为自身实际ip地址
 
@@ -100,8 +98,6 @@ docker start jms_koko02
 docker start jms_guacamole02
 docker start jms_koko03
 docker start jms_guacamole03
-docker start jms_koko04
-docker start jms_guacamole04
 exit 0
 ```
 ```sh
@@ -117,8 +113,6 @@ docker stop jms_koko02
 docker stop jms_guacamole02
 docker stop jms_koko03
 docker stop jms_guacamole03
-docker stop jms_koko04
-docker stop jms_guacamole04
 systemctl stop jms
 
 exit 0
@@ -136,8 +130,6 @@ docker start jms_koko02 >>/var/log/jumpserver/`date +%F`_jumpserver.log
 docker start jms_guacamole02 >>/var/log/jumpserver/`date +%F`_jumpserver.log
 docker start jms_koko03 >>/var/log/jumpserver/`date +%F`_jumpserver.log
 docker start jms_guacamole03 >>/var/log/jumpserver/`date +%F`_jumpserver.log
-docker start jms_koko04 >>/var/log/jumpserver/`date +%F`_jumpserver.log
-docker start jms_guacamole04 >>/var/log/jumpserver/`date +%F`_jumpserver.log
 echo success >>/var/log/jumpserver/`date +%F`_jumpserver.log
 exit 0
 ```
