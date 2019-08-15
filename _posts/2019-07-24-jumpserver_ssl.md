@@ -30,6 +30,10 @@ server {
     ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
     ssl_prefer_server_ciphers on;
 ```
+
+
+
+
 <img src="http://newbluesky.top/img/jumpserver_ssl2.png">
 <font size="2.5" color="red">修改完成之后内容如图所示</font>
 <br />
