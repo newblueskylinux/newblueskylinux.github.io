@@ -50,26 +50,22 @@ Default output format [None]: json
 这一步做完之后会在当前家目录的aws目录下生成两个文件，config和credentials
 
 里面的数据明文存放，在 .aws/config 文件中声明新账号所在区域内容
-
+```sh
 [default]
-
 region = cn-northwest-1
-
 output = json
-
+```
 在 .aws/credentials 文件中存放访问key和密钥内容
-
+```sh
 [default]
-
 aws_access_key_id = XXXXXXXXXXXXX（你的AWS访问KEY）
-
 aws_secret_access_key = XXXXXXXXXXXXXXXX（你的AWS访问密钥）
+```
 
+** 到这里awscli工具基本已配置完毕，看完是不是很简单呢。
 
-* 到这里awscli工具基本已配置完毕，看完是不是很简单呢。
-
-	当然里面省略了一些内容，对于初学者可能有一些疑问，比如为什么我的linux系统使用pip install安装的时候报错
-	Key ID和Access Key从哪里获取，总不可能凭空产生吧。请带着这些疑问移步到我另一篇文章[初识aws控制台]
+    当然里面省略了一些内容，对于初学者可能有一些疑问，比如为什么我的linux系统使用pip install安装的时候报错
+    Key ID和Access Key从哪里获取，总不可能凭空产生吧。请带着这些疑问移步到我另一篇文章[初识aws控制台]
 
 验证awscli是否配置成功也很简单
 ```sh
