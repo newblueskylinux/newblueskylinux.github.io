@@ -13,11 +13,11 @@ author: 郑禹
 	本地服务器迁移上云是我们运维人员在运维工作中很常见的一个工作。
 	实体机镜像打包很困难，但是从vmvare虚拟机中打包就买那么苦难了，让我们来看看是如何完成的。
 
-## 一、导出OVF模板
+## 一、导出OVA模板
 
 	首先，需要将虚拟机关机，选定虚拟机，点击导出OVF模板
 	
-<img src="http://newbluesky.top/img/voa_1.png">
+<img src="http://newbluesky.top/img/ova1.png">
 
 
 
@@ -25,11 +25,12 @@ author: 郑禹
 
 	将OVA文件存放到本地目录中
 	
-<img src="http://newbluesky.top/img/voa_2.png">
+<img src="http://newbluesky.top/img/ova2.png">
 
 ##	二、创建服务角色（此操作只需要做一次）
 
 	1.在当前目录下创建一个名为 trust-policy.json 的文件，在文件中写入以下内容（此文件是通过json库为创建的角色授权）
+
 ```sh
 {
    "Version": "2012-10-17",
@@ -46,6 +47,7 @@ author: 郑禹
       }
    ]
 }
+
 ```
 
 	2.使用 create-role 命令创建名为 vmimport 的角色，并向 VM Import/Export 提供对该角色的访问权，如果json文件不在当前目录下需要加上文件所在的绝对路径。
@@ -152,7 +154,7 @@ aws ec2 import-image --description "win_server2012" --disk-containers "file://co
 aws ec2 describe-import-image-tasks
 ```
 
-如果状态显示completed则认为导入成功
+	如果状态显示completed则认为导入成功
 
 <img src="http://newbluesky.top/img/task1.png">
 
@@ -163,4 +165,5 @@ aws ec2 describe-import-image-tasks
 <img src="http://newbluesky.top/img/task2.png">
 
 	2.用导出的AMI映像启动一台EC2实例，根据需求选择实例类型，启动开机即可完成
-	---
+
+---
