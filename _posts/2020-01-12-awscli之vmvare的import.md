@@ -17,7 +17,7 @@ author: 郑禹
 
 	首先，需要将虚拟机关机，选定虚拟机，点击导出OVF模板
 	
-<img src="http://newbluesky.top/img/ova1.png">
+<img src="http://zhengyu1992.cn/img/ova1.png">
 
 
 
@@ -25,7 +25,7 @@ author: 郑禹
 
 	将OVA文件存放到本地目录中
 	
-<img src="http://newbluesky.top/img/ova2.png">
+<img src="http://zhengyu1992.cn/img/ova2.png">
 
 ##	二、创建服务角色（此操作只需要做一次）
 
@@ -156,13 +156,13 @@ aws ec2 describe-import-image-tasks
 
 	如果状态显示completed则认为导入成功
 
-<img src="http://newbluesky.top/img/task1.png">
+<img src="http://zhengyu1992.cn/img/task1.png">
 
 ##	四、aws控制台完成AMI文件生成ec2实例
 
 	1.登录到EC2控制台点击AMI可查看导入成功的映像
 	
-<img src="http://newbluesky.top/img/task2.png">
+<img src="http://zhengyu1992.cn/img/task2.png">
 
 	2.用导出的AMI映像启动一台EC2实例，根据需求选择实例类型，启动开机即可完成
 

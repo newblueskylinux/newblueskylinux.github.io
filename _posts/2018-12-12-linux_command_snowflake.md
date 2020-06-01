@@ -11,7 +11,7 @@ author: 郑禹
 ---
 ## 我们先来看看效果
 
-<img src="http://newbluesky.top/img/linux_snow1.gif">
+<img src="http://zhengyu1992.cn/img/linux_snow1.gif">
 
 
 
@@ -36,7 +36,7 @@ Su Mo Tu We Th Fr Sa
 [root@linuxstudy ~]# cal|boxes -d dog -p at1l7|boxes -d columns
 ```
 
-<img src="http://newbluesky.top/img/linux_snow2.png">
+<img src="http://zhengyu1992.cn/img/linux_snow2.png">
 
 但是我们今天的重点不在这，相信大家也看到了屏幕中的"雪花"才是本次博文的主角
 
@@ -44,7 +44,7 @@ Su Mo Tu We Th Fr Sa
 
 ### 获取关键参数s
 
-我们知道在unicode编码中有很多特殊字符，其中"雪花"的unicode编码就是u2744，别问我为什么是这个，我也不知道，想知道为什么的可以查看我另一片博文[特殊符号Unicode编码大全](http://newbluesky.top/2018/12/11/unicode_symbols/)
+我们知道在unicode编码中有很多特殊字符，其中"雪花"的unicode编码就是u2744，别问我为什么是这个，我也不知道，想知道为什么的可以查看我另一片博文[特殊符号Unicode编码大全](http://zhengyu1992.cn/2018/12/11/unicode_symbols/)
 
 因此我们要取三个关键参数，即你当前屏幕行值、列值、小于列值的随机数、"雪花"图形
 
@@ -54,7 +54,7 @@ Su Mo Tu We Th Fr Sa
 ```
 我们现在想实现的是让雪花随机出现在这个40*134的屏幕内，并"落"到屏幕最下面一行，那么我们实现的逻辑是在屏幕内设定一个坐标系
 
-<img src="http://newbluesky.top/img/linux_snow3.png">
+<img src="http://zhengyu1992.cn/img/linux_snow3.png">
 
 
 确定确定"雪花"出现的坐标，并让其横坐标不变的情况下，纵坐标每过一段时间+1，然后"消除"掉原本位置的"雪花"
@@ -63,7 +63,7 @@ Su Mo Tu We Th Fr Sa
 ```sh
 [root@linuxstudy ~]#while true;do echo $LINES $COLUMNS $(($RANDOM%$COLUMNS)) $(printf "\u2744\n");sleep 2;done|awk '{a[$3]=0;for(x in a) {y=a[x];a[x]=a[x]+1;printf "%s;%s ",y,x;printf "%s;%s;%s 0;0\n",a[x],x,$4;}}'
 ```
-<img src="http://newbluesky.top/img/linux_snow4.gif">
+<img src="http://zhengyu1992.cn/img/linux_snow4.gif">
 
 可以看到连续两次的输出坐标就是刷新"雪花"和消除“雪花”的坐标
 
@@ -75,7 +75,7 @@ Su Mo Tu We Th Fr Sa
 [root@linuxstudy ~]# while true;do echo $LINES $COLUMNS $(($RANDOM%$COLUMNS)) $(printf "\u2744\n");sleep 2;done|awk '{a[$3]=0;for(x in a) {y=a[x];a[x]=a[x]+1;printf "\033[%s;%sH ",y,x;printf "\033[%s;%sH%s \033[0;0H",a[x],x,$4;}}'
 ```
 
-<img src="http://newbluesky.top/img/linux_snow5.gif">
+<img src="http://zhengyu1992.cn/img/linux_snow5.gif">
 
 为了让"雪花"落得快一些，我们将sleep时间缩短到0.1秒
 

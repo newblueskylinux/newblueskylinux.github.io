@@ -87,7 +87,7 @@ vi /etc/rc.d/rc.local #编辑rc.local文件最后一行加入service iptables st
 #!/bin/bash
 #
 # Author:  zhengyu <zy544725571@outlook.com>
-# Blog:  https://newbluesky.top
+# Blog:  https://zhengyu1992.cn
 #
 # Installs a PPTP VPN-only system for CentOS
 

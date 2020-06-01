@@ -19,7 +19,7 @@ author: 郑禹
 ```sh
 docker ps
 ```
-<img src="http://newbluesky.top/img/jumpserver_lvs1.png">
+<img src="http://zhengyu1992.cn/img/jumpserver_lvs1.png">
 <font size="2.5" color="red">第一列内容为docker的ID</font>
 <br />
 如果有未运行的docker，需要加上-a参数
@@ -55,7 +55,7 @@ vi /etc/nginx/conf.d/jumpserver.conf
 ```
 在图示这部分内容的上方添加下面一段代码
 
-<img src="http://newbluesky.top/img/jumpserver_lvs2.png">
+<img src="http://zhengyu1992.cn/img/jumpserver_lvs2.png">
 ```sh
 upstream jumpserver {
     server localhost:8080;
@@ -79,7 +79,7 @@ upstream guacamole {
 }
 ```
 修改图片中的方内容
-<img src="http://newbluesky.top/img/jumpserver_lvs3.png">
+<img src="http://zhengyu1992.cn/img/jumpserver_lvs3.png">
 或使用以下命令修改
 ```sh
 sed -i s/"http://localhost:5000/socket.io/;"/"http://kokows/socket.io/;"/g /etc/nginx/conf.d/jumpserver.conf
@@ -104,7 +104,7 @@ systemctl reload nginx
 ```sh
 vi /etc/nginx/nginx.conf
 ```
-<img src="http://newbluesky.top/img/jumpserver_lvs4.png">
+<img src="http://zhengyu1992.cn/img/jumpserver_lvs4.png">
 
 在图示这部分内容下添加下面一段代码
 ```sh

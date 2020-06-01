@@ -39,7 +39,7 @@ yum install nsenter
 ```
 安装好nsenter之后可以查看一下该命令的使用
 
-<img src="http://newbluesky.top/img/nsenter1.png">
+<img src="http://zhengyu1992.cn/img/nsenter1.png">
 
 nsenter可以访问另一个进程的名称空间。所以为了连接到某个容器我们还需要获取该容器的第一个进程的PID。可以使用docker inspect命令来拿到该PID
 
@@ -49,7 +49,7 @@ docker inspect --help
 ```
 inspect命令可以分层级显示一个镜像或容器的信息。比如我们当前有一个正在运行的容器
 
-<img src="http://newbluesky.top/img/nsenter2.png">
+<img src="http://zhengyu1992.cn/img/nsenter2.png">
 
 可以使用docker inspect来查看该容器的详细信息
 ```sh
@@ -57,7 +57,7 @@ docker inspect fdd3b478896c
 ```
 此处信息太多，只截取一部分展示
 
-<img src="http://newbluesky.top/img/nsenter3.png">
+<img src="http://zhengyu1992.cn/img/nsenter3.png">
 
 如果要显示该容器第一个进行的PID可以使用如下方式
 ```sh
@@ -65,7 +65,7 @@ docker inspect -f {{.State.Pid}} fdd3b478896c
 ```
 现在可以看到容器的ID为2571，在拿到该进程PID之后我们就可以使用nsenter命令访问该容器了
 
-<img src="http://newbluesky.top/img/nsenter4.png">
+<img src="http://zhengyu1992.cn/img/nsenter4.png">
 
 执行下面命令
 ```sh
@@ -79,7 +79,7 @@ nsenter --target 2571 --mount --uts --ipc --net --pid /bin/su
 ```
 这里可以看到已经成功进入容器
 
-<img src="http://newbluesky.top/img/nsenter5.png">
+<img src="http://zhengyu1992.cn/img/nsenter5.png">
 
 # 脚本方式：
 ```sh

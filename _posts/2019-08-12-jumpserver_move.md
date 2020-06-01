@@ -51,7 +51,7 @@ mysql -uroot
 
 SECRET_KEY  BOOTSTRAP_TOKEN  DB_PASSWORD
 
-<img src="http://newbluesky.top/img/jumpmove1.png">
+<img src="http://zhengyu1992.cn/img/jumpmove1.png">
 
 ## 四、重启jms进程
 
@@ -143,7 +143,7 @@ crontab -e
 ```
 ## 八、恢复https的证书文件
 
-如果只放在公司局域网内需要自签名证书，具体过程参照我另一篇博文，[利用openssl创建https证书](http://newbluesky.top/2019/07/24/ssl_self/)
+如果只放在公司局域网内需要自签名证书，具体过程参照我另一篇博文，[利用openssl创建https证书](http://zhengyu1992.cn/2019/07/24/ssl_self/)
 
 ## 九、恢复录像文件
 
