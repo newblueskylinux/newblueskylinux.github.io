@@ -23,7 +23,9 @@ type: page
 
 	[日播集团](http://www.ribo-group.com/)（2016.12-2018.4）
 
-	[旺旺集团](http://www.wantwant.com.cn/)（2018.4-至今）
+	[旺旺集团](http://www.wantwant.com.cn/)（2018.4-2020.5）
+	
+	[同程生活](https://www.ixiancheng.com/)（2020.5-至今）
 
 ## 联系我
 * 手机：18321373745
