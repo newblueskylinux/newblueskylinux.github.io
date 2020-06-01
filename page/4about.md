@@ -11,7 +11,7 @@ type: page
 
 ## 个人信息
 
-<img src="http://zhengyu1992.cn/img/2cun.png" width="220px">
+<img src="https://zhengyu1992.cn/img/2cun.png" width="220px">
 
 * 性别：男
 * 爱好：除了唱、跳、RAP和篮球其它都爱
