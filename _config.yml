@@ -9,14 +9,14 @@
 title: 郑禹的博客
 brief-intro: Linux 运维
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://newblueskylinux.github.io" # the base hostname & protocol for your site
+url: "https://zhengyu1992.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
 # other links
 twitter_username: 
 facebook_username: 
-github_username:  newblueskylinux
+github_username:  zhengyu1992
 email: 544725571@qq.com
 weibo_username: zhyrh1314
 zhihu_username: zhengyu1992
