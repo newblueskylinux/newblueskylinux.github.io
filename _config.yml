@@ -9,27 +9,27 @@
 title: 郑禹的博客
 brief-intro: Linux 运维
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://zhengyu1992.github.io" # the base hostname & protocol for your site
+url: "https://zhengyu1992.cn" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
 # other links
 twitter_username: 
 facebook_username: 
-github_username:  zhengyu1992
+github_username:  zhengyu1992linux
 email: 544725571@qq.com
 weibo_username: zhyrh1314
 zhihu_username: zhengyu1992
 linkedIn_username: 
 dribbble_username:
 
-description_footer: 开源学习之旅
+description_footer: 学无止境
 
 # comments
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
-duoshuo_shortname: #newblueskylinux
-disqus_shortname: newblueskylinux
+duoshuo_shortname: #zhengyu1992linux
+disqus_shortname: zhengyu1992linux
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
