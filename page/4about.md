@@ -32,7 +32,7 @@ type: page
 * QQ：544725571
 * 微信：同手机号
 * Email：544725571@qq.com
-* [GitHub](https://github.com/newblueskylinux)
+* [GitHub](https://github.com/zhengyu1992linux)
 * [微博](http://weibo.com/zhyrh1314)
 * [知乎](https://www.zhihu.com/people/zhengyu1992)
 
